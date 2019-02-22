@@ -1,5 +1,4 @@
 '''                Younes Elhjouji        Mohamed Abdulkahar
-                        Languages (& Compilers) assignment
                               Python 3.6 32-bit
 '''
 
