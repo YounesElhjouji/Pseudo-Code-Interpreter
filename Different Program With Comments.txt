@@ -1,0 +1,40 @@
++0 000 000 000 (loc 0) Constant 0
++0 000 000 000 (loc 1) Constant 1
++0 000 000 000 (loc 2) i = index
++0 000 000 000 (loc 3) idx1
++0 000 000 000 (loc 4) idx2
++0 000 000 000 (loc 5) Positive sum
++0 000 000 000 (loc 6) Negative sum
++0 000 000 000 (loc 7) Positive avg
++0 000 000 000 (loc 8) Negative avg
++0 000 000 000 (loc 9) n = Number of inputs
++0 000 000 000 (loc 10) temp
++0 000 000 000 (loc 11) Start of pos array
++0 000 000 495 (loc 12) Start of neg Array
++9 999 999 999
++8 000 000 009 (loc 0) Read number of inputs 
+-2 009 009 001 (loc 1) Store 1 in loc 1 of memory
++8 000 000 010 (loc 2) Read data into temp
++5 010 000 006 (loc 3) If positive skip to 6
+-6 010 495 004 (loc 4) Else store in negative array
++1 001 004 004 (loc 5) And Increment index for negative array
+-5 010 000 009 (loc 6) If negative skip to 9
+-6 010 011 003 (loc 7) Else store in positive array
++1 001 003 003 (loc 8) And Increment index for positive array
++7 002 009 002 (loc 9) Increment index, test with n, loop to 02
++0 000 000 002 (loc 10) Reinitialize i to 0
++6 011 002 010 (loc 11) Retrieve pos[i]
++1 010 005 005 (loc 12) add pos[i] to pos sum
++7 002 003 011 (loc 13) increment i, check with idx1, loop to 11
++0 000 000 002 (loc 14) Reinitialize i to 0
++6 495 002 010 (loc 15) Retrieve neg[i]
++1 010 006 006 (loc 16) add neg[i] to neg sum
++7 002 004 015 (loc 17) increment i, check with idx2, loop to 15
+-2 005 003 007 (loc 18) pos sum / idx1 store in pos average
+-2 006 004 008 (loc 19) neg sum / idx2 store in neg average
+-8 007 000 000 (loc 20) print pos avg
+-8 008 000 000 (loc 21) print neg avg
++9 000 000 000 (loc 22) stop
++9 999 999 999
++0 000 000 010
+1125, -761, 0, -5468, -204, 1987658, -1234567891, 205, -34657899, -355
